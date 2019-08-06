@@ -1,0 +1,28 @@
+.navbutton {
+    background-color: chocolate;
+    padding: 11px 25px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    display: inline-block;
+    position: relative;
+}
+/* <!-- This is the dropdown box! --> */
+.dropdown-box {
+    display: none;
+    position: absolute;
+    z-index: 80;
+    padding-top: 20px;
+    margin-left: -23px;
+    padding-bottom: 5px;
+}
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+.dropdown-box .navbutton {
+    background-color: cadetblue;
+}
+.dropdown-box .navbutton:hover {
+    background-color: blueviolet;
+    transition-duration: 0.75s;
+}
