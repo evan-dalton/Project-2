@@ -26,7 +26,26 @@ border: 2px solid white;
 padding: 7px 25px;
 font-family: 'Playfair Display', serif;
 margin-left: 5px;
-
+display: inline-block;
+position: relative;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;
+}
+.navbuttons:hover .dropdown {
+    display: block;
+}
+.dropdown .navbuttons {
+    background-color: white;
+    width: 120px;
+}
+.dropdown .navbuttons a {
+    background-color: white;
+    width: 120px;
+    color: #FA4083
 }
 main {
     min-height: 300px;

@@ -1,28 +1,28 @@
-.navbutton {
-    background-color: chocolate;
+.nav {
+    background-color: lawngreen;
     padding: 11px 25px;
-    width: 50px;
+    width: 100px;
     text-align: center;
-    display: flex;
     display: inline-block;
     position: relative;
 }
-/* <!-- This is the dropdown box! --> */
-.dropdown-box {
+/* this turns the dropdown off when not in use */
+.dropdown {
     display: none;
     position: absolute;
-    z-index: 80;
+    z-index: 99;
     padding-top: 20px;
-    margin-left: -23px;
-    padding-bottom: 5px;
+    margin-left: -22px;
 }
-.navbutton:hover .dropdown-box {
+/* this turns the dropdown on when in use */
+.nav:hover .dropdown {
     display: block;
 }
-.dropdown-box .navbutton {
+.dropdown .nav {
     background-color: cadetblue;
+
 }
-.dropdown-box .navbutton:hover {
-    background-color: blueviolet;
-    transition-duration: 0.75s;
+.dropdown .nav:hover {
+    background-color: pink;
+    transition-duration: 0.5s;
 }
