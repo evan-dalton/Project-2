@@ -1,10 +1,15 @@
 /* font-family: 'Roboto', sans serif; */
 /* font-family: 'Playfair Display', serif; */
-body {
+html {
     background-image: linear-gradient(#FC5E55, #FA4083);
-     color: white;
-     font-family: 'Roboto', sans-serif;
-     font-size: 1.125rem;
+}
+body {
+    background-image: url(img/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
 }
 .container {
     width: 1024px;
@@ -53,6 +58,10 @@ main {
     align-items: center;
     display: flex;
 }
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+}
 .herobox1 {
     flex: 2;
     padding-right: 100px;
@@ -62,7 +71,6 @@ h1 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 1.2rem;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, .250);
-
 }
 .herobox2 {
     flex: 1;
@@ -161,3 +169,43 @@ p {
     font-size: 0.8rem;
     padding-left: 50px;
 }
+.input-wrapper {
+    margin-bottom: 20px;
+}
+input[type=text], [type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+.margin-right-a {
+    margin-right: 20px;
+}
+input[type=radio] {
+    margin-right: 10px;
+}
+form {
+    margin: 40px 0px;
+}
+.buttons2 {
+    background-color: white;
+    color: #FC5E55;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-radius: 2px;
+}
+a.buttons2 {
+    display: inline-block;
+    margin-top: 20px; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .150);
+}
+.buttons2:hover {
+    background-color: #FA4083;
+    transition-duration: 0.5s;
+}
+
